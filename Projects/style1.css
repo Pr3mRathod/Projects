@@ -1,0 +1,382 @@
+/* BAse style */
+/* imort statemnet for Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Poppins:wght@100;200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img
+{
+    width: 100%;
+}
+body
+{
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Popins','Lato',sans-serif;
+}
+h1{font-size: 2.7rem;}
+h2{font-size: 2.4rem;}
+h3{font-size: 2.1rem;}
+h4{font-size: 1.8rem;}
+h5{font-size: 1.5rem;}
+h6{font-size: 1.2rem;}
+
+.p-0{padding:0 ;}
+.p-10{padding:10px ;}
+.p-15{padding:15px ;}
+.p-20{padding:20px ;}
+.p-30{padding:30px ;}
+.p-60{padding:60px ;}
+
+
+.pt-0{padding-top:0 ;}
+.pt-10{padding-top:10px ;}
+.pt-20{padding-top:20px ;}
+.pt-30{padding-top:30px ;}
+
+.pb-0{padding-bottom:0 ;}
+.pb-10{padding-bottom:10px;}
+.pb-20{padding-bottom:20px ;}
+.pb-30{padding-bottom:30px ;}
+
+.ps-0{padding-left:0 ;}
+.ps-10{padding-left:10px ;}
+.ps-20{padding-left:20px ;}
+.ps-30{padding-left:30px ;}
+
+.pe-0{padding-right:0 ;}
+.pe-10{padding-right:10px !important ; }
+.pe-20{padding-right:20px ;}
+.pe-30{padding-right:30px ;}
+
+
+.m-0{margin:0 ;}
+.m-10{margin:10px ;}
+.m-20{margin:20px ;}
+.m-30{margin:30px ;}
+
+
+.mt-0{margin-top:0 ;}
+.mt-10{margin-top:10px ;}
+.mt-20{margin-top:20px ;}
+.mt-30{margin-top:30px ;}
+
+.mb-0{margin-bottom:0 ;}
+.mb-10{margin-bottom:10px;}
+.mb-20{margin-bottom:20px ;}
+.mb-30{margin-bottom:30px ;}
+
+.ms-0{margin-left:0 ;}
+.ms-10{margin-left:10px ;}
+.ms-20{margin-left:20px ;}
+.ms-30{margin-left:30px ;}
+
+
+.me-0{margin-right:0 ;}
+.me-10{margin-right:10px; }
+.me-20{margin-right:20px ;}
+.me-30{margin-right:30px ;}
+
+
+.container
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container-fluid
+{
+    width: 95%;
+    margin: 0 auto;
+}
+.light-section
+{
+    background-color: #FFF;
+    color: #333;
+    padding: 80px 0;
+}
+
+.dark-section
+{
+    background-color:#333;
+    color: #FFF;
+    padding: 80px 0;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.btn:link
+{
+    color: black;
+}
+.btn:hover
+{
+    cursor: pointer;
+}
+.btn.btn-black,.btn.btn-black:link,.btn.btn-black:visited
+{
+    background-color: #333;
+    color: #FFF;
+    border: solid 1px #333;
+}
+.btn.btn-black:hover{
+    background-color: #FFF;
+    color: #333;
+}
+.btn.btn-outline-black:link,.btn.btn-outline-black:visited
+{
+    color: #333;
+    border: solid 1px #333;
+}
+
+.btn.btn-outline-black:hover{
+    background-color: #333;
+    color: #FFF;
+}
+
+.btn.btn-white:link,.btn.btn-white:visited
+{
+    background-color: #FFF;
+    color: #333;
+    border: solid 1px #FFF;
+}
+
+.btn.btn-white:hover{
+    background-color: #333;
+    color: #FFF;
+}
+
+.btn.btn-primary:link,.btn.btn-primary:visited
+{
+    background-color: #2079bd;
+    color: #333;
+    border: solid 1px #2079bd;
+}
+.btn.btn-primary:hover{
+    background-color: #333;
+    color: #FFF;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col
+{
+    float: left;
+    padding: 0 15px;
+}
+
+.col.col-12{width: 100%;}
+.col.col-11{width: 91.66%;}
+.col.col-10{width: 83.33%;}
+.col.col-9{width: 75%;}
+.col.col-8{width: 66.66%;}
+.col.col-7{width: 58.33%;}
+.col.col-6{width: 50%;}
+.col.col-5{width: 41.66%;}
+.col.col-4{width: 33.33%;}
+.col.col-3{width: 25%;}
+.col.col-2{width: 16.33%;}
+.col.col-1{width: 8.33%;}
+
+
+.clearfix
+{
+    clear: both;
+}
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-justify{text-align: justify;}
+
+.section-title{
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.section-subtitle
+{
+    font-style: italic;
+    color: #777;
+    font-size: 1.1rem;
+}
+.section-header
+{
+    margin-bottom: 25px;
+}
+
+ul.tour-dates
+{
+    background-color: #FFF;
+    color: #333;
+    list-style: none;
+    border: solid 1px #AAA;
+}
+
+ul.tour-dates > li
+{
+    border-bottom: solid 1px #CCC;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.pill
+{
+    display: inline-block;
+    padding: 2px 5px;
+}
+.pill.pill-danger
+{
+    background-color: #F4562A;
+    color: #FFF;
+    margin-left: 20px;    
+}
+.badge
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 100%;
+}
+.badge.badge-black
+{
+    background-color: #111;
+    color: #FFF;
+}
+
+.card-image
+{
+    position: relative;
+    height: 200px;
+}
+.card-image > .card-image-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.card:hover .card-image-overlay
+{
+    display: block;
+}
+.card-body
+{
+    background-color: #FFF;
+    color: #333;
+}
+.tour-location
+{
+    font-weight: normal;
+}
+.tour-date
+{
+    color: #AAA;
+}
+.form-control
+{
+    width: 100%;
+    padding: 9px 7px;
+    border: solid 1px #BBB;
+}
+
+.col.no-gutter {
+   padding: 0; 
+}
+                        /*NAVBAR*/       
+.navbar {
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+  }
+  .menu-item {
+    display: inline-block;
+  }
+  
+  .menu-item > .menu-item-link {
+    display: inline-block;
+    padding: 15px 25px;
+  }
+  
+  .menu-item-link:link,
+  .menu-item-link:visited {
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .menu-item-link:hover {
+    background-color: #AAA;
+  }
+  
+  .has-sub-menu {
+    position: relative;
+  }
+  
+  .sub-menu {
+    position: absolute;
+    background-color: #FFFEFF;
+    display: none;
+  }
+  
+  .sub-menu .menu-item .menu-item-link,
+  .sub-menu .menu-item {
+    display: block;
+  }
+  .has-sub-menu:hover .sub-menu {
+    display: block;
+    border: solid 1px #EEE;
+    border-top: none;
+  }
+.sub-menu .menu-item .menu-item-link:link,
+.sub-menu .menu-item .menu-item-link:visited {
+    color: #111;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 10px 40px 10px 15px;
+  }
+  
+  
+.nav-search a {
+    display: inline-block;
+    padding: 15px 25px;
+  }
+.nav-search a:visited,
+.nav-search a:link {
+    color: #FFF;
+}
+.nav-search a:hover {
+    background-color: #F4562A;
+}
+@media (min-width: 500px) and (max-width: 800px){
+    .col.col-1, .col.col-2, .col.col-3, .col.col.col-4, .col.col-5, .col.col-6, .col.col-7, .col.col-8, .col.col-9,
+    .col.col-10,.col.col-11,.col.col-12{
+        width: 100%;
+    }
+}
+
+
+

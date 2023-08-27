@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --primary-color:#c84630;
+    --dark-color:#333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.4;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+textarea{
+    resize: vertical;
+}
+ul.list li{
+    padding: .7rem 0;
+    border-bottom: dotted 1px #808080;
+}
+.text-center {
+    text-align: center;
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+    padding: .6rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar .logo{
+    max-width: 240px;
+}
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    margin: 0 .55rem;
+}
+.navbar ul li a{
+    padding: .7rem;
+    border-radius: .4rem;
+}
+.navbar ul li a:link,
+.navbar ul li a:visited{
+    color: #fff;
+    transition: all .3s;
+}
+
+.navbar ul li a:hover{
+    background-color: var(--primary-color);
+}
+.showcase {
+    background: #333 url(../images/showcase.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.showcase-content h2{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.showcase-content p.lead{
+    font-size: 1.4rem;
+    font-weight: 200;
+    padding: 0 40px;
+    margin-bottom: 1rem;
+}
+.btn{
+    display: inline-block;
+    border: none;
+    padding: .3rem 2rem;
+    font-size: 1.2rem;
+    border-radius: .7rem;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.btn-dark:hover{
+    background-color: #444;
+}
+
+.btn-primary:hover{
+    background-color: rgb(145,63,48);
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.page-section{
+    padding: 40px 0;
+}
+.section-heading{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.items{
+    display: flex;
+    flex: 1;
+}
+.items .item{
+    margin: 0 1rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    transition: all .3s;
+} 
+.items .item h4{
+    font-size: 1.5rem;
+}
+.items .item i,
+.items .item h4{
+    margin-bottom: 1rem;
+}
+.items .item i{
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: #fff;
+    line-height: 60px;
+    border-radius: 100%;
+}
+#what .items .item:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.items .item:hover i{
+    background-color: #fff;
+    color: var(--primary-color);
+}
+.dark-section{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+#who{
+    display: flex;
+}
+#who .who-img{
+    background: url(../images/people.jpg) no-repeat center center;
+    background-size: cover;
+}
+#who .page-section{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#who>*{
+    flex: 1;
+}
+
+#contact{
+    display: flex;
+}
+#contact>*{
+    flex: 1;
+}
+.primary-section{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.contact-form .section-heading{
+    margin-bottom: 10px;
+}
+
+.contact-form{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-group .form-control,
+.form-group .form-label{
+    display: block;
+    width: 100%;
+}
+.form-group .form-control{
+    padding: .5rem;
+}
+.d-block{
+    display: block;
+}
+.d-block.btn{
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    /* background-color: #333; */
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:window-inactive{
+    background-color: rbga(200,70,48,.5);
+}
+::selection{
+    background-color: rgba(200,70,48,0.5);
+}
